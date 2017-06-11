@@ -1,0 +1,14 @@
+{
+  "name": "express_route_scanner",
+  "version": "0.0.1",
+  "description": "scan routes on given express app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nitay Rabinovich",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
