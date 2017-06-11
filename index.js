@@ -1,6 +1,6 @@
 'use strict';
 
-import * as express from 'express';
+express = require('express');
 
 exports.getAppRoutes = function(expressApp) {
             // TBD - recurse over route tree to replace triple loop.
