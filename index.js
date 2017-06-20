@@ -14,7 +14,9 @@ exports.getAppRoutes = function(expressApp) {
                     const prefix_routes = regexp.match(/(\w+)+/gi);
                     let prefix = '';
                     if (prefix_routes !== null) {
-                        prefix = `/${prefix_routes[0]}/${prefix_routes[1]}`;
+                        prefix_routes.forEach(prefix_route => {
+                            prefix += `/${prefix_route}`
+                        });
                     }
                     layer.handle.stack.forEach(handler => {
                         if (handler.route.stack) {
